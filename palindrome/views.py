@@ -16,4 +16,4 @@ class CheckPalindrome(APIView):
     def post(self, request, *args, **kwargs):
         serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
-        return Response(serializer, status=200)
+        return Response(serializer.data, status=200)
