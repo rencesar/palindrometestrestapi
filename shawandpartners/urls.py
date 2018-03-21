@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from palindrome.views import CheckPalindrome
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('palindrome/', CheckPalindrome.as_view(), name='check-palindrome'),
 ]
