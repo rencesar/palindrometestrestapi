@@ -3,6 +3,12 @@
 
 ### Explanation:
 
+ * Run server:
+```
+pip install -r requirements.txt
+python manage.py runserver
+```
+
  * Endpoint: '/palindrome/'
  * HTTP Method: POST
  * Request data: {"string": "anypalindromestringhere"}
